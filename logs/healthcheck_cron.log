@@ -294,3 +294,21 @@ Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
 [2025-08-05 16:40:01] Temperatura CPU: 47.0°C
 [2025-08-05 16:40:01] Log criptografado salvo em /home/ruan100pressa/terminal-master/logs/healthcheck.log.enc
 [2025-08-05 16:40:01] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 16:50:01] Log criptografado salvo em /home/ruan100pressa/terminal-master/logs/healthcheck.log.enc
+[2025-08-05 16:50:01] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 17:00:01] Log criptografado salvo em /home/ruan100pressa/terminal-master/logs/healthcheck.log.enc
+[2025-08-05 17:00:01] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 17:10:02] Log criptografado salvo em /home/ruan100pressa/terminal-master/logs/healthcheck.log.enc
+[2025-08-05 17:10:02] Healthcheck finalizado
