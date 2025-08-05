@@ -1,0 +1,296 @@
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 12:20:02] Iniciando healthcheck
+[2025-08-05 12:20:02] CPU Load Average: 2.25
+[2025-08-05 12:20:02] Memória usada: 887 MB / 1855 MB (47%)
+[2025-08-05 12:20:02] Disco usado: 52969992 KB / 306033624 KB (17%)
+[2025-08-05 12:20:02] Network enp3s0 - RX bytes: 70165406, TX bytes: 9175251
+[2025-08-05 12:20:02] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 12:30:01] Iniciando healthcheck
+[2025-08-05 12:30:01] CPU Load Average: 2.17
+[2025-08-05 12:30:01] Memória usada: 968 MB / 1855 MB (52%)
+[2025-08-05 12:30:01] Disco usado: 52988708 KB / 306033624 KB (17%)
+[2025-08-05 12:30:01] Network enp3s0 - RX bytes: 75516707, TX bytes: 9768288
+[2025-08-05 12:30:01] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 12:40:01] Iniciando healthcheck
+[2025-08-05 12:40:01] CPU Load Average: 2.94
+[2025-08-05 12:40:01] Memória usada: 1071 MB / 1855 MB (57%)
+[2025-08-05 12:40:01] Disco usado: 53016456 KB / 306033624 KB (17%)
+[2025-08-05 12:40:01] Network enp3s0 - RX bytes: 91958782, TX bytes: 10937701
+[2025-08-05 12:40:01] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 12:50:01] Iniciando healthcheck
+[2025-08-05 12:50:01] CPU Load Average: 2.15
+[2025-08-05 12:50:01] Memória usada: 1070 MB / 1855 MB (57%)
+[2025-08-05 12:50:01] Disco usado: 53017448 KB / 306033624 KB (17%)
+[2025-08-05 12:50:01] Network enp3s0 - RX bytes: 92420193, TX bytes: 11438701
+[2025-08-05 12:50:01] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 13:00:01] Iniciando healthcheck
+[2025-08-05 13:00:01] CPU Load Average: 2.33
+[2025-08-05 13:00:01] Memória usada: 1105 MB / 1855 MB (59%)
+[2025-08-05 13:00:01] Disco usado: 53017816 KB / 306033624 KB (17%)
+[2025-08-05 13:00:01] Network enp3s0 - RX bytes: 92882687, TX bytes: 11845617
+[2025-08-05 13:00:01] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 13:10:01] Iniciando healthcheck
+[2025-08-05 13:10:01] CPU Load Average: 2.92
+[2025-08-05 13:10:01] Memória usada: 989 MB / 1855 MB (53%)
+[2025-08-05 13:10:01] Disco usado: 53019740 KB / 306033624 KB (17%)
+[2025-08-05 13:10:01] Network enp3s0 - RX bytes: 93690301, TX bytes: 12094418
+[2025-08-05 13:10:01] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 13:20:02] Iniciando healthcheck
+[2025-08-05 13:20:02] CPU Load Average: 2.23
+[2025-08-05 13:20:02] Memória usada: 1016 MB / 1855 MB (54%)
+[2025-08-05 13:20:02] Disco usado: 53033040 KB / 306033624 KB (17%)
+[2025-08-05 13:20:02] Network enp3s0 - RX bytes: 94967225, TX bytes: 12605273
+[2025-08-05 13:20:02] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 13:30:01] Iniciando healthcheck
+[2025-08-05 13:30:01] CPU Load Average: 2.10
+[2025-08-05 13:30:01] Memória usada: 1101 MB / 1855 MB (59%)
+[2025-08-05 13:30:01] Disco usado: 53034400 KB / 306033624 KB (17%)
+[2025-08-05 13:30:01] Network enp3s0 - RX bytes: 96856814, TX bytes: 13328170
+[2025-08-05 13:30:01] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 13:40:01] Iniciando healthcheck
+[2025-08-05 13:40:01] CPU Load Average: 3.14
+[2025-08-05 13:40:01] Memória usada: 1108 MB / 1855 MB (59%)
+[2025-08-05 13:40:01] Disco usado: 53034716 KB / 306033624 KB (17%)
+[2025-08-05 13:40:01] Network enp3s0 - RX bytes: 97227679, TX bytes: 14158410
+[2025-08-05 13:40:01] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 13:50:01] Iniciando healthcheck
+[ERRO] Falha ao obter dados de memória
+[2025-08-05 13:50:01] CPU Load Average: 2.07
+[2025-08-05 13:50:01] Memória usada: 0 MB / 1 MB (0%)
+[2025-08-05 13:50:01] Disco usado: 53036108 KB / 306033624 KB (17%)
+[2025-08-05 13:50:01] Network enp3s0 - RX bytes: 97488700, TX bytes: 
+{"ok":true,"result":{"message_id":5,"from":{"id":7760230057,"is_bot":true,"first_name":"terminalMasterBot","username":"terminalmaster_bot"},"chat":{"id":7812876856,"first_name":"Ruan","last_name":"Ferreira De Oliveira","type":"private"},"date":1754416202,"text":"Healthcheck Report:\nCPU Load Average: 2.07\nMem\u00f3ria usada: 0 MB / 1 MB (0%)\nDisco usado: 53036108 KB / 306033624 KB (17%)\nNetwork enp3s0 - RX bytes: 97488700, TX bytes:","entities":[{"offset":0,"length":19,"type":"bold"},{"offset":38,"length":4,"type":"code"},{"offset":58,"length":16,"type":"code"},{"offset":88,"length":32,"type":"code"},{"offset":129,"length":6,"type":"code"},{"offset":148,"length":8,"type":"code"}]}}[2025-08-05 13:50:02] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 14:00:01] Iniciando healthcheck
+[ERRO] Falha ao obter dados de memória
+[2025-08-05 14:00:01] CPU Load Average: 0.77
+[2025-08-05 14:00:01] Memória usada: 0 MB / 1 MB (0%)
+[2025-08-05 14:00:01] Disco usado: 53036300 KB / 306033624 KB (17%)
+[2025-08-05 14:00:01] Network enp3s0 - RX bytes: 97828477, TX bytes: 
+{"ok":true,"result":{"message_id":6,"from":{"id":7760230057,"is_bot":true,"first_name":"terminalMasterBot","username":"terminalmaster_bot"},"chat":{"id":7812876856,"first_name":"Ruan","last_name":"Ferreira De Oliveira","type":"private"},"date":1754416802,"text":"Healthcheck Report:\nCPU Load Average: 0.77\nMem\u00f3ria usada: 0 MB / 1 MB (0%)\nDisco usado: 53036300 KB / 306033624 KB (17%)\nNetwork enp3s0 - RX bytes: 97828477, TX bytes:","entities":[{"offset":0,"length":19,"type":"bold"},{"offset":38,"length":4,"type":"code"},{"offset":58,"length":16,"type":"code"},{"offset":88,"length":32,"type":"code"},{"offset":129,"length":6,"type":"code"},{"offset":148,"length":8,"type":"code"}]}}[2025-08-05 14:00:02] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 14:10:01] Iniciando healthcheck
+[ERRO] Falha ao obter dados de memória
+[2025-08-05 14:10:02] CPU Load Average: 0.92
+[2025-08-05 14:10:02] Memória usada: 0 MB / 1 MB (0%)
+[2025-08-05 14:10:02] Disco usado: 53036420 KB / 306033624 KB (17%)
+[2025-08-05 14:10:02] Network enp3s0 - RX bytes: 97934495, TX bytes: 
+{"ok":true,"result":{"message_id":7,"from":{"id":7760230057,"is_bot":true,"first_name":"terminalMasterBot","username":"terminalmaster_bot"},"chat":{"id":7812876856,"first_name":"Ruan","last_name":"Ferreira De Oliveira","type":"private"},"date":1754417403,"text":"Healthcheck Report:\nCPU Load Average: 0.92\nMem\u00f3ria usada: 0 MB / 1 MB (0%)\nDisco usado: 53036420 KB / 306033624 KB (17%)\nNetwork enp3s0 - RX bytes: 97934495, TX bytes:","entities":[{"offset":0,"length":19,"type":"bold"},{"offset":38,"length":4,"type":"code"},{"offset":58,"length":16,"type":"code"},{"offset":88,"length":32,"type":"code"},{"offset":129,"length":6,"type":"code"},{"offset":148,"length":8,"type":"code"}]}}[2025-08-05 14:10:03] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 14:20:01] Iniciando healthcheck
+[ERRO] Falha ao obter dados de memória
+[2025-08-05 14:20:01] CPU Load Average: 1.05
+[2025-08-05 14:20:01] Memória usada: 0 MB / 1 MB (0%)
+[2025-08-05 14:20:01] Disco usado: 53036536 KB / 306033624 KB (17%)
+[2025-08-05 14:20:01] Network enp3s0 - RX bytes: 98073353, TX bytes: 
+{"ok":true,"result":{"message_id":8,"from":{"id":7760230057,"is_bot":true,"first_name":"terminalMasterBot","username":"terminalmaster_bot"},"chat":{"id":7812876856,"first_name":"Ruan","last_name":"Ferreira De Oliveira","type":"private"},"date":1754418002,"text":"Healthcheck Report:\nCPU Load Average: 1.05\nMem\u00f3ria usada: 0 MB / 1 MB (0%)\nDisco usado: 53036536 KB / 306033624 KB (17%)\nNetwork enp3s0 - RX bytes: 98073353, TX bytes:","entities":[{"offset":0,"length":19,"type":"bold"},{"offset":38,"length":4,"type":"code"},{"offset":58,"length":16,"type":"code"},{"offset":88,"length":32,"type":"code"},{"offset":129,"length":6,"type":"code"},{"offset":148,"length":8,"type":"code"}]}}[2025-08-05 14:20:02] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 14:30:01] Iniciando healthcheck
+[ERRO] Falha ao obter dados de memória
+[2025-08-05 14:30:01] CPU Load Average: 1.10
+[2025-08-05 14:30:01] Memória usada: 0 MB / 1 MB (0%)
+[2025-08-05 14:30:01] Disco usado: 53036688 KB / 306033624 KB (17%)
+[2025-08-05 14:30:01] Network enp3s0 - RX bytes: 98302442, TX bytes: 
+{"ok":true,"result":{"message_id":9,"from":{"id":7760230057,"is_bot":true,"first_name":"terminalMasterBot","username":"terminalmaster_bot"},"chat":{"id":7812876856,"first_name":"Ruan","last_name":"Ferreira De Oliveira","type":"private"},"date":1754418602,"text":"Healthcheck Report:\nCPU Load Average: 1.10\nMem\u00f3ria usada: 0 MB / 1 MB (0%)\nDisco usado: 53036688 KB / 306033624 KB (17%)\nNetwork enp3s0 - RX bytes: 98302442, TX bytes:","entities":[{"offset":0,"length":19,"type":"bold"},{"offset":38,"length":4,"type":"code"},{"offset":58,"length":16,"type":"code"},{"offset":88,"length":32,"type":"code"},{"offset":129,"length":6,"type":"code"},{"offset":148,"length":8,"type":"code"}]}}[2025-08-05 14:30:02] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+./scripts/bash/healthcheck.sh: linha 4: ./scripts/bash/../../.env: Arquivo ou diretório inexistente
+[2025-08-05 14:40:01] Iniciando healthcheck
+[2025-08-05 14:40:01] CPU Load Average: 2
+[ERRO] Falha ao obter dados de memória
+[2025-08-05 14:40:01] Memória usada: 0 MB / 1 MB (0%)
+[2025-08-05 14:40:01] Disco usado: 53037412 KB / 306033624 KB (17%)
+[2025-08-05 14:40:01] Network enp3s0 - RX bytes: 98562896, TX bytes: 16780803
+{"ok":true,"result":{"message_id":11,"from":{"id":7760230057,"is_bot":true,"first_name":"terminalMasterBot","username":"terminalmaster_bot"},"chat":{"id":7812876856,"first_name":"Ruan","last_name":"Ferreira De Oliveira","type":"private"},"date":1754419203,"text":"Healthcheck Report:\nCPU Load Average: 2\nMem\u00f3ria usada: 0 MB / 1 MB (0%)\nDisco usado: 53037412 KB / 306033624 KB (17%)\nNetwork enp3s0 - RX bytes: 98562896, TX bytes: 16780803","entities":[{"offset":0,"length":19,"type":"bold"},{"offset":20,"length":153,"type":"pre"}]}}[2025-08-05 14:40:03] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[ERRO] Arquivo .env não encontrado: /home/ruan100pressa/terminal-master/scripts/.env
+make: *** [Makefile:19: run] Erro 1
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 15:00:01] Iniciando healthcheck
+[2025-08-05 15:00:01] CPU Load Average: 2.24
+[ERRO] Falha ao obter dados de memória
+[2025-08-05 15:00:01] Memória usada: 0 MB / 0 MB (0%)
+[2025-08-05 15:00:01] Disco usado: 53037828 KB / 306033624 KB (19%)
+[2025-08-05 15:00:01] Network enp3s0 - RX bytes: 99114410, TX bytes: 17934986
+{"ok":true,"result":{"message_id":13,"from":{"id":7760230057,"is_bot":true,"first_name":"terminalMasterBot","username":"terminalmaster_bot"},"chat":{"id":7812876856,"first_name":"Ruan","last_name":"Ferreira De Oliveira","type":"private"},"date":1754420402,"text":"Healthcheck Report:\\n Load Average: 2.24\\nMem\u00f3ria usada: 0 MB / 0 MB (0%)\\nDisco usado: 53037828 KB / 306033624 KB (19%)\\nNetwork enp3s0 - RX bytes: 99114410, TX bytes: 17934986\\n","entities":[{"offset":0,"length":19,"type":"bold"},{"offset":21,"length":158,"type":"pre","language":"\\nCPU"}]}}[2025-08-05 15:00:01] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 15:10:01] Iniciando healthcheck
+[2025-08-05 15:10:01] CPU Load Average: 0.55
+[ERRO] Falha ao obter dados de memória
+[2025-08-05 15:10:01] Memória usada: 0 MB / 0 MB (0%)
+[2025-08-05 15:10:01] Disco usado: 53037940 KB / 306033624 KB (19%)
+[2025-08-05 15:10:01] Network enp3s0 - RX bytes: 99280762, TX bytes: 18189660
+{"ok":true,"result":{"message_id":14,"from":{"id":7760230057,"is_bot":true,"first_name":"terminalMasterBot","username":"terminalmaster_bot"},"chat":{"id":7812876856,"first_name":"Ruan","last_name":"Ferreira De Oliveira","type":"private"},"date":1754421002,"text":"Healthcheck Report:\\n Load Average: 0.55\\nMem\u00f3ria usada: 0 MB / 0 MB (0%)\\nDisco usado: 53037940 KB / 306033624 KB (19%)\\nNetwork enp3s0 - RX bytes: 99280762, TX bytes: 18189660\\n","entities":[{"offset":0,"length":19,"type":"bold"},{"offset":21,"length":158,"type":"pre","language":"\\nCPU"}]}}[2025-08-05 15:10:01] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 15:20:01] Iniciando healthcheck
+[2025-08-05 15:20:01] CPU Load Average: 0.96
+[ERRO] Falha ao obter dados de memória
+[2025-08-05 15:20:01] Memória usada: 0 MB / 0 MB (0%)
+[2025-08-05 15:20:01] Disco usado: 53038048 KB / 306033624 KB (19%)
+[2025-08-05 15:20:01] Network enp3s0 - RX bytes: 99385605, TX bytes: 18310317
+{"ok":true,"result":{"message_id":15,"from":{"id":7760230057,"is_bot":true,"first_name":"terminalMasterBot","username":"terminalmaster_bot"},"chat":{"id":7812876856,"first_name":"Ruan","last_name":"Ferreira De Oliveira","type":"private"},"date":1754421602,"text":"Healthcheck Report:\\n Load Average: 0.96\\nMem\u00f3ria usada: 0 MB / 0 MB (0%)\\nDisco usado: 53038048 KB / 306033624 KB (19%)\\nNetwork enp3s0 - RX bytes: 99385605, TX bytes: 18310317\\n","entities":[{"offset":0,"length":19,"type":"bold"},{"offset":21,"length":158,"type":"pre","language":"\\nCPU"}]}}[2025-08-05 15:20:01] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 15:30:02] Iniciando healthcheck
+[2025-08-05 15:30:02] CPU Load Average: 3
+./scripts/bash/healthcheck.sh: linha 56: 100 * mem_used / mem_total : divisão por 0 (token de erro é "mem_total ")
+[2025-08-05 15:30:02] Disco usado: 53046992K / 306033624K
+[2025-08-05 15:30:02] Network enp3s0 - RX bytes: 104449526, TX bytes: 19330866
+[2025-08-05 15:30:03] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 15:40:01] Iniciando healthcheck
+[2025-08-05 15:40:01] [ERRO] Falha ao obter dados de memória
+[2025-08-05 15:40:01] CPU Load Average: 0.87
+[2025-08-05 15:40:01] Memória usada: MB / MB (0%)
+[2025-08-05 15:40:01] Disco usado: 53047788K / 306033624K
+[2025-08-05 15:40:01] Network enp3s0 - RX bytes: 105559240, TX bytes: 20951594
+[2025-08-05 15:40:04] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 15:50:01] Iniciando healthcheck
+[2025-08-05 15:50:01] [ERRO] Falha ao obter dados de memória
+[2025-08-05 15:50:01] CPU Load Average: 1.75
+[2025-08-05 15:50:01] Memória usada: MB / MB (0%)
+[2025-08-05 15:50:01] Disco usado: 53047696K / 306033624K
+[2025-08-05 15:50:01] Network enp3s0 - RX bytes: 105765167, TX bytes: 21340739
+[2025-08-05 15:50:02] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 16:00:01] Iniciando healthcheck
+[2025-08-05 16:00:01] [ERRO] Falha ao obter dados de memória
+[2025-08-05 16:00:01] CPU Load Average: 0.37
+[2025-08-05 16:00:01] Memória usada: MB / MB (0%)
+[2025-08-05 16:00:01] Disco usado: 53050884K / 306033624K
+[2025-08-05 16:00:01] Network enp3s0 - RX bytes: 108196796, TX bytes: 22013970
+[2025-08-05 16:00:02] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 16:10:01] Iniciando healthcheck
+[2025-08-05 16:10:01] CPU Load Average: 0
+[2025-08-05 16:10:01] [ERRO] Falha ao obter dados de memória
+[2025-08-05 16:10:01] Disco usado: 53096896K / 306033624K
+[2025-08-05 16:10:01] Network enp3s0 - RX bytes: 130839359, TX bytes: 24696975
+{"ok":true,"result":{"message_id":22,"from":{"id":7760230057,"is_bot":true,"first_name":"terminalMasterBot","username":"terminalmaster_bot"},"chat":{"id":7812876856,"first_name":"Ruan","last_name":"Ferreira De Oliveira","type":"private"},"date":1754424602,"text":"Healthcheck Report:\\n Average: 0\\nMem\u00f3ria usada: N/A\\nDisco usado: 53096896K / 306033624K\\nNetwork enp3s0 - RX bytes: 130839359, TX bytes: 24696975\\n","entities":[{"offset":0,"length":19,"type":"bold"},{"offset":21,"length":128,"type":"pre","language":"\\nLoad"}]}}[2025-08-05 16:10:01] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 16:20:01] Iniciando healthcheck
+[2025-08-05 16:20:01] CPU Load Average: 0.55
+./scripts/bash/healthcheck.sh: linha 43: 100 * MEM_USED / MEM_TOTAL : divisão por 0 (token de erro é "MEM_TOTAL ")
+[2025-08-05 16:20:01] Memória usada:  MB /  MB (%)
+[2025-08-05 16:20:01] Disco usado: 51G / 292G
+[2025-08-05 16:20:01] Network enp3s0 - RX: 131325661 bytes, TX: 25434575 bytes
+[2025-08-05 16:20:02] Temperatura CPU: 47.0°C
+./scripts/bash/healthcheck.sh: linha 91: [: : esperava expressão de número inteiro
+[2025-08-05 16:20:02] Healthcheck finalizado
+Can't open file /home/ruan100pressa/terminal-master/.secreta.logkey
+Error getting password
+40B761DEBD730000:error:80000002:system library:BIO_new_file:No such file or directory:../crypto/bio/bss_file.c:67:calling fopen(/home/ruan100pressa/terminal-master/.secreta.logkey, r)
+40B761DEBD730000:error:10000080:BIO routines:BIO_new_file:no such file:../crypto/bio/bss_file.c:75:
+make: *** [Makefile:19: run] Erro 1
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 16:30:02] Iniciando healthcheck
+[2025-08-05 16:30:02] CPU Load Average: 0
+./scripts/bash/healthcheck.sh: linha 28: printf: 1855.88: número inválido
+./scripts/bash/healthcheck.sh: linha 30: printf: 1226.91: número inválido
+./scripts/bash/healthcheck.sh: linha 31: printf: 1855.88: número inválido
+[2025-08-05 16:30:02] Memória usada: 1226 MB / 1855 MB (66%)
+[2025-08-05 16:30:02] Disco usado: 51G / 292G
+[2025-08-05 16:30:02] Network enp3s0 - RX: 131902640 bytes, TX: 26262384 bytes
+[2025-08-05 16:30:02] Temperatura CPU: 46.0°C
+*** WARNING : deprecated key derivation used.
+Using -iter or -pbkdf2 would be better.
+[2025-08-05 16:30:02] Log criptografado salvo em /home/ruan100pressa/terminal-master/logs/healthcheck.log.enc
+[2025-08-05 16:30:02] Healthcheck finalizado
+Makefile:41: aviso: sobrescrevendo os comandos para o alvo 'encrypt'
+Makefile:38: aviso: ignorando comandos antigos para o alvo 'encrypt'
+[+] Executando suíte terminal-master...
+[INFO] Executando suíte terminal-master...
+[2025-08-05 16:40:01] Iniciando healthcheck
+[2025-08-05 16:40:01] CPU Load Average: 1.20
+[2025-08-05 16:40:01] Memória usada: 958 MB / 1855 MB (51%)
+[2025-08-05 16:40:01] Disco usado: 51G / 292G
+[2025-08-05 16:40:01] Network enp3s0 - RX: 132418241 bytes, TX: 27219059 bytes
+[2025-08-05 16:40:01] Temperatura CPU: 47.0°C
+[2025-08-05 16:40:01] Log criptografado salvo em /home/ruan100pressa/terminal-master/logs/healthcheck.log.enc
+[2025-08-05 16:40:01] Healthcheck finalizado

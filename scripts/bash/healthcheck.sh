@@ -1,58 +1,67 @@
 #!/bin/bash
 
-# Carrega variáveis de ambiente
-ENV_FILE="$HOME/terminal-master/config/.env"
+# healthcheck.sh - Script completo de verificação de sistema com criptografia moderna e robustez
 
-if [ -f "$ENV_FILE" ]; then
-    source "$ENV_FILE"
-else
-    echo "[ERRO] Arquivo .env não encontrado em $ENV_FILE"
-    exit 1
-fi
+LOG_DIR="$HOME/terminal-master/logs"
+LOG_FILE="$LOG_DIR/healthcheck.log"
+ENCRYPTED_LOG_FILE="$LOG_DIR/healthcheck.log.enc"
+KEY_FILE="$HOME/terminal-master/.secreta.logkey"
 
-# Validação das variáveis essenciais
-for var in LOG_DIR LOG_FILE_PREFIX NETWORK_INTERFACE MEMINFO_CMD; do
-    if [ -z "${!var}" ]; then
-        echo "[ERRO] Variável $var não está definida no .env"
-        exit 1
-    fi
-done
-
-# Timestamp
-timestamp=$(date '+%Y-%m-%d %H:%M:%S')
-
-# Criação do diretório de log, se não existir
+# Cria diretório de logs, se não existir
 mkdir -p "$LOG_DIR"
 
-# Caminho completo do log
-logfile="$LOG_DIR/${LOG_FILE_PREFIX}_healthcheck.log"
+# Garante permissões corretas
+chmod -R u+rwX "$LOG_DIR"
+chown -R "$USER":"$USER" "$LOG_DIR"
 
-# Função para logar
-log() {
-    echo "[$timestamp] $1" | tee -a "$logfile"
-}
+# Gera chave se não existir
+if [ ! -f "$KEY_FILE" ]; then
+    openssl rand -base64 32 > "$KEY_FILE"
+fi
 
-log "Iniciando healthcheck"
+# Início do log
+echo "[$(date +'%F %T')] Iniciando healthcheck" >> "$LOG_FILE"
 
-# CPU Load Average
-loadavg=$(cut -d ' ' -f1 /proc/loadavg)
-log "CPU Load Average: $loadavg"
+# CPU Load
+LOAD=$(awk '{print $1}' /proc/loadavg)
+echo "[$(date +'%F %T')] CPU Load Average: $LOAD" >> "$LOG_FILE"
 
-# Memória RAM com free -m
-read mem_used mem_total <<< $(eval "$MEMINFO_CMD")
-mem_pct=$(( 100 * mem_used / mem_total ))
-log "Memória usada: ${mem_used} MB / ${mem_total} MB (${mem_pct}%)"
+# Memória
+MEM_TOTAL=$(free -m | awk '/^Mem:/ {print $2}')
+MEM_USED=$(free -m | awk '/^Mem:/ {print $3}')
+if [[ -n "$MEM_TOTAL" && -n "$MEM_USED" ]]; then
+    MEM_PERC=$(( MEM_USED * 100 / MEM_TOTAL ))
+    echo "[$(date +'%F %T')] Memória usada: $MEM_USED MB / $MEM_TOTAL MB (${MEM_PERC}%)" >> "$LOG_FILE"
+else
+    echo "[$(date +'%F %T')] [ERRO] Falha ao obter dados de memória" >> "$LOG_FILE"
+fi
 
 # Disco
-disk_info=$(df / | awk 'END {print $3, $2}')
-disk_used=$(echo "$disk_info" | cut -d' ' -f1)
-disk_total=$(echo "$disk_info" | cut -d' ' -f2)
-disk_pct=$(( 100 * disk_used / disk_total ))
-log "Disco usado: ${disk_used} KB / ${disk_total} KB (${disk_pct}%)"
+DISK=$(df -h / | awk 'NR==2 {print $3 " / " $2}')
+echo "[$(date +'%F %T')] Disco usado: $DISK" >> "$LOG_FILE"
 
 # Rede
-rx_bytes=$(cat /sys/class/net/${NETWORK_INTERFACE}/statistics/rx_bytes)
-tx_bytes=$(cat /sys/class/net/${NETWORK_INTERFACE}/statistics/tx_bytes)
-log "Network ${NETWORK_INTERFACE} - RX bytes: $rx_bytes, TX bytes: $tx_bytes"
+IFACE=$(ip route | grep default | awk '{print $5}')
+RX=$(cat /sys/class/net/$IFACE/statistics/rx_bytes)
+TX=$(cat /sys/class/net/$IFACE/statistics/tx_bytes)
+echo "[$(date +'%F %T')] Network $IFACE - RX: $RX bytes, TX: $TX bytes" >> "$LOG_FILE"
 
-log "Healthcheck finalizado"
+# Temperatura (somente se lm-sensors instalado)
+if command -v sensors &>/dev/null; then
+    TEMP=$(sensors | grep -m 1 -Eo '[+-][0-9]+\.[0-9]+°C')
+    echo "[$(date +'%F %T')] Temperatura CPU: $TEMP" >> "$LOG_FILE"
+else
+    echo "[$(date +'%F %T')] Temperatura CPU: [lm-sensors não instalado]" >> "$LOG_FILE"
+fi
+
+# Criptografa o log com pbkdf2
+openssl enc -aes-256-cbc -pbkdf2 -salt \
+    -in "$LOG_FILE" \
+    -out "$ENCRYPTED_LOG_FILE" \
+    -pass file:"$KEY_FILE"
+
+# Remove log original após criptografia
+rm -f "$LOG_FILE"
+
+echo "[$(date +'%F %T')] Log criptografado salvo em $ENCRYPTED_LOG_FILE"
+echo "[$(date +'%F %T')] Healthcheck finalizado"
