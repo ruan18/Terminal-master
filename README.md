@@ -1,63 +1,128 @@
-# 🧠 terminal-master
+Terminal Master
 
-*Suíte avançada de automação e monitoramento via terminal Linux*  
-🔥 Profissional, modular, segura e pronta para produção.
+🎯 Suíte de Automação Terminal Profissional
 
----
+Projeto modular e poderoso para automações em terminal Linux com logs criptografados, alertas e integração entre scripts.
 
-## 🚀 Visão Geral
+🔧 Instalação
 
-terminal-master é uma suíte modular para automação no terminal Linux, ideal para devs, sysadmins e hackers éticos que exigem desempenho, segurança e extensibilidade.  
-Com foco extremo em logs criptografados, alertas em tempo real (via Telegram), estrutura modular e compatibilidade com todas as distros, esta suíte é projetada para uso *profissional e remoto*.
+# Clone o repositório
+git clone https://github.com/seu-usuario/terminal-master.git
+cd terminal-master
 
----
+# Torne o instalador executável e execute
+chmod +x install.sh
+bash install.sh
 
-## 🧩 Módulos atuais
+✅ Após a instalação, ative as variáveis:
 
-| Módulo           | Descrição                                                                 |
-|------------------|---------------------------------------------------------------------------|
-| logger         | Geração de logs criptografados com OpenSSL, separação por nível/data.     |
-| monitor        | Monitora recursos de sistema, uso de CPU/RAM/DISK, e gera alertas.        |
-| healthcheck    | (Em construção) Diagnóstico completo do sistema com relatório automatizado. |
 
-Cada módulo possui logs próprios, flags específicas e pode ser executado de forma independente ou centralizada via terminal-master.sh.
 
----
 
-## 🔐 Segurança
+source ~/.env/vars.sh
 
-- Criptografia simétrica AES-256 nos logs (logger.sh)
-- Chave armazenada em variável de ambiente .env/vars.sh
-- Compatível com GnuPG, OpenSSL e pipelines de CI/CD
 
 ---
 
-## 🧠 Diferenciais Técnicos
+🚀 Funcionalidades Implementadas
 
-- Estrutura *modular e profissional*
-- Totalmente compatível com *Debian, Ubuntu, Arch, Fedora, etc.*
-- *Logs criptografados por padrão*
-- Alertas integráveis com *Telegram*, cron, logrotate
-- Autoinstalação com install.sh (em construção)
-- Flag --help interativa
-- Código limpo, shellcheck-validado, com foco em *portfólio premium*
+✅ Logger (com criptografia)
+
+Gera logs com níveis: INFO, ERROR, DEBUG
+
+Organiza por pasta/data
+
+Criptografa e descriptografa automaticamente com OpenSSL
+
+
+# Exemplo:
+bash logger.sh --info "Sistema iniciado com sucesso"
+bash logger.sh --error "Erro de autenticação"
+bash logger.sh --encrypt
+bash logger.sh --decrypt
+
 
 ---
 
-## 📁 Estrutura de Pastas
+✅ Monitoramento do Sistema
 
-```bash
+Mostra uso de CPU, RAM e disco
+
+Salva tudo em log criptografado automaticamente
+
+
+# Executar via script principal
+bash terminal-master.sh --monitor
+
+# Ou diretamente
+bash modules/monitor/monitor.sh
+
+
+---
+
+📦 Estrutura de Pastas
+
 terminal-master/
-├── .env/                # Variáveis sensíveis (criptografia, paths)
-│   └── vars.sh
-├── logs/                # Logs organizados por módulo e data
+├── terminal-master.sh          # Script principal
+├── install.sh                  # Instalador automático
+├── save.sh                     # Script para salvar via Git
+├── .env/vars.sh                # Variáveis do projeto (criptografia, logs)
+├── logs/                       # Logs organizados por módulo/data
 │   └── monitor/
-├── modules/             # Módulos independentes
-│   ├── logger/
-│   │   ├── logger.sh
-│   │   └── logger-minimal.sh
-│   └── monitor/
-│       └── monitor.sh
-├── terminal-master.sh   # Script centralizador de toda a suíte
-├── save.sh              # Script de versionamento Git local
-└── README.md            # Este arquivo
+│       └── monitor.log.enc
+├── modules/                    # Módulos separados
+│   ├── logger/                 # Logger principal
+│   └── monitor/                # Monitor do sistema
+└── README.md                   # Este arquivo
+
+
+---
+
+🔐 Segurança
+
+Logs protegidos com OpenSSL AES-256-CBC
+
+Chave criptográfica configurável em .env/vars.sh
+
+
+
+---
+
+📤 Salvamento com Git
+
+Para salvar seu progresso e subir ao GitHub:
+
+bash save.sh
+
+
+---
+
+✨ Em breve
+
+Módulo de Backup automático com log e alerta Telegram
+
+Watchdog de serviços
+
+Atualizador inteligente de pacotes
+
+Documentação técnica com Makefile
+
+
+
+---
+
+🤖 Modo Hacker
+
+Comandos úteis:
+
+source ~/.env/vars.sh      # Carrega variáveis do projeto
+bash terminal-master.sh    # Executa o sistema
+
+
+---
+
+🧠 Autor
+
+Feito por @ruan100pressa com o 🔥 nas veias e o terminal na cabeça.
+
+Se curtiu, ⭐ dá uma estrela no repositório!
