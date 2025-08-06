@@ -1,19 +1,6 @@
-#!/usr/bin/env bash
-
-# Chave padrão de criptografia simétrica
-export ENCRYPTION_PASSWORD="senha_super_segura_aqui"
-
-# Caminho base do projeto
-export BASE_DIR="$HOME/terminal-master"
-
-# Caminho para logs
-export LOG_DIR="$BASE_DIR/logs"
-
-# Caminho para logs do módulo de monitoramento
-export MONITOR_LOG_DIR="$LOG_DIR/monitor"
-
-# Caminho completo para o log criptografado do monitoramento
-export MONITOR_LOG_FILE="$MONITOR_LOG_DIR/monitor.log.enc"
-
-# Caminho para binários específicos, se necessário no futuro
-export BIN_DIR="$BASE_DIR/bin"
+#!/bin/bash
+export VAR_APP_NAME="Terminal Master"
+export VAR_VERSION="v1.0.0"
+export LOG_DIR="$HOME/terminal-master/logs"
+export ENCRYPT_KEY="chave_forte_123"
+export ENCRYPT_OPTIONS="-aes-256-cbc -pbkdf2"

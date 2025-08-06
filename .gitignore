@@ -1,0 +1,6 @@
+.env/
+logs/
+*.enc
+*.log
+*.bak
+*.tmp
