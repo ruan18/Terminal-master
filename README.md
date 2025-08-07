@@ -1,8 +1,8 @@
 cat > ~/terminal-master/README.md << 'EOF'
 # 🧠 terminal-master
 
-Suíte profissional de automação Linux via terminal com módulos integrados, logs criptografados, backup seguro, monitoramento do sistema e estrutura modular extensível.  
-Feito para sysadmins, devs, pentesters e entusiastas que querem poder absoluto sobre o sistema.
+Suíte profissional de automação Linux via terminal com módulos integrados, logs criptografados, backup seguro, monitoramento do sistema, healthcheck detalhado e estrutura modular extensível.  
+Feito para sysadmins, devs, pentesters e entusiastas que querem controle absoluto e segurança total no sistema.
 
 ---
 
@@ -23,7 +23,7 @@ bash install.sh
 ## 🧩 Execução via Terminal
 
 \`\`\`bash
-# Ver ajuda
+# Ver ajuda geral
 bash terminal-master.sh --help
 
 # Executar monitoramento do sistema
@@ -31,6 +31,9 @@ bash terminal-master.sh --monitor
 
 # Executar backup criptografado
 bash terminal-master.sh --backup
+
+# Executar healthcheck detalhado do sistema
+bash terminal-master.sh --health
 \`\`\`
 
 ---
@@ -44,33 +47,37 @@ terminal-master/
 ├── .env/
 │   └── vars.sh
 ├── logs/
-│   └── monitor/
+│   ├── monitor/
+│   ├── healthcheck/
+│   └── logger/
 ├── backups/
 ├── modules/
 │   ├── logger/
 │   │   └── logger.sh
 │   ├── monitor/
 │   │   └── monitor.sh
-│   └── backup/
-│       └── backup.sh
+│   ├── backup/
+│   │   └── backup.sh
+│   └── healthcheck/
+│       └── healthcheck.sh
 \`\`\`
 
 ---
 
 ## 🔐 Módulo Logger (com Criptografia)
 
-Registra eventos em diferentes níveis com criptografia AES-256 nos logs.
+Registra eventos em diferentes níveis com criptografia AES-256 via OpenSSL para máxima segurança dos logs.
 
 \`\`\`bash
-# Logar manualmente (caso deseje)
+# Exemplos de uso do logger
 bash modules/logger/logger.sh --info "Sistema iniciado"
-bash modules/logger/logger.sh --error "Erro crítico"
+bash modules/logger/logger.sh --error "Erro crítico detectado"
 bash modules/logger/logger.sh --debug "Modo debug ativado"
 
-# Criptografar logs antigos
+# Criptografar logs antigos manualmente
 bash modules/logger/logger.sh --encrypt
 
-# Descriptografar para leitura
+# Descriptografar logs para leitura
 bash modules/logger/logger.sh --decrypt
 \`\`\`
 
@@ -80,7 +87,7 @@ bash modules/logger/logger.sh --decrypt
 
 ## 📊 Módulo Monitor
 
-Coleta dados básicos do sistema (RAM, CPU, espaço em disco, temperatura, uptime etc.)
+Coleta dados essenciais do sistema: uso de RAM, CPU, espaço em disco, temperatura, uptime, carga da CPU.
 
 \`\`\`bash
 bash terminal-master.sh --monitor
@@ -92,13 +99,14 @@ bash terminal-master.sh --monitor
 
 ## 💾 Módulo Backup
 
-Cria backup compactado e criptografado do diretório desejado.
+Cria backup compactado e criptografado do diretório definido nas variáveis de ambiente.
 
 \`\`\`bash
 bash terminal-master.sh --backup
 \`\`\`
 
 📦 Gera:
+
 - \`backup_TIMESTAMP.tar.gz\`
 - \`backup_TIMESTAMP.tar.gz.enc\`
 
@@ -106,9 +114,22 @@ bash terminal-master.sh --backup
 
 ---
 
+## 🩺 Módulo Healthcheck (Checkup Completo do Sistema)
+
+Realiza checagens detalhadas de integridade, uso de recursos e saúde geral do sistema.  
+Gera logs criptografados que ajudam no monitoramento e troubleshooting.
+
+\`\`\`bash
+bash terminal-master.sh --health
+\`\`\`
+
+📁 Logs em \`logs/healthcheck/healthcheck.log.enc\`
+
+---
+
 ## ⚙️ Variáveis de Ambiente
 
-Essas variáveis ficam em \`.env/vars.sh\` e são carregadas automaticamente. Exemplo:
+Configurações críticas ficam em \`.env/vars.sh\`, carregadas automaticamente pelo script principal. Exemplo:
 
 \`\`\`bash
 export LOG_ENCRYPTION_KEY="sua-chave-forte-aqui"
@@ -118,7 +139,7 @@ export BACKUP_SOURCE="\$HOME/Documentos"
 export BACKUP_DIR="\$PROJECT_ROOT/backups"
 \`\`\`
 
-Carregar:
+Carregue as variáveis manualmente se desejar:
 
 \`\`\`bash
 source ~/.env/vars.sh
@@ -126,57 +147,55 @@ source ~/.env/vars.sh
 
 ---
 
-## 🧪 Módulos Prontos
+## 🧪 Módulos Prontos e Testados
 
-| Flag             | Descrição                         | Status |
-|------------------|-----------------------------------|--------|
-| \`--monitor\`       | Coleta dados do sistema + log     | ✅ OK  |
-| \`--backup\`        | Backup com compressão + criptografia | ✅ OK  |
-| \`--logger\`        | Logger modular com AES-256        | ✅ OK  |
-
----
-
-## 🔮 Próximos Módulos (em construção)
-
-| Flag             | Descrição                              |
-|------------------|------------------------------------------|
-| \`--health\`       | Verificação de integridade do sistema    |
-| \`--watchdog\`     | Detecção ativa de falhas                |
-| \`--cron\`         | Execução programada automática (cron)   |
-| \`--telegram\`     | Envio de alertas via bot Telegram       |
-| \`--update\`       | Atualizações automáticas do projeto     |
-| \`--logrotate\`    | Limpeza e rotação dos logs antigos      |
+| Flag            | Descrição                               | Status  |
+|-----------------|-----------------------------------------|---------|
+| \`--monitor\`      | Coleta dados do sistema + gera log      | ✅ OK   |
+| \`--backup\`       | Backup com compressão + criptografia    | ✅ OK   |
+| \`--logger\`       | Logger modular com criptografia AES-256 | ✅ OK   |
+| \`--health\`       | Healthcheck detalhado do sistema         | ✅ OK   |
 
 ---
 
-## 🤝 Contribuindo
+## 🔮 Próximos Módulos (Em desenvolvimento)
 
-1. Faça um fork  
-2. Crie um branch com sua feature: \`git checkout -b minha-feature\`  
-3. Faça commit: \`git commit -m 'feat: minha nova feature'\`  
-4. Push: \`git push origin minha-feature\`  
-5. Crie um Pull Request
+| Flag          | Descrição                                |
+|---------------|------------------------------------------|
+| \`--watchdog\`  | Monitoramento ativo de falhas             |
+| \`--cron\`     | Execução automática via cron               |
+| \`--telegram\` | Envio de alertas e notificações via Telegram |
+| \`--update\`   | Atualização automática do projeto          |
+| \`--logrotate\`| Rotação e limpeza automática dos logs      |
+
+---
+
+## 🤝 Como Contribuir
+
+1. Faça um fork do projeto  
+2. Crie um branch para sua feature: \`git checkout -b minha-feature\`  
+3. Faça commit das alterações: \`git commit -m 'feat: descrição da feature'\`  
+4. Envie o branch: \`git push origin minha-feature\`  
+5. Abra um Pull Request
 
 ---
 
 ## 🔒 Segurança
 
-- Criptografia AES-256 via OpenSSL  
-- Sem coleta de dados  
-- Backup e logs locais, protegidos por chave definida pelo usuário  
-- Ideal para automações pessoais ou profissionais
+- Criptografia AES-256 com OpenSSL para logs e backups  
+- Sem coleta externa de dados  
+- Arquivos locais, protegidos por chave definida pelo usuário  
+- Foco em automações profissionais seguras e auditáveis
 
 ---
 
 ## 🧑‍💻 Autor
 
-Feito com ⚡ foco técnico e ☕ café por [ruan18](https://github.com/ruan18)
+Desenvolvido com ⚡ foco técnico e ☕ café por [ruan18](https://github.com/ruan18)
 
 ---
 
 ## 🌐 Licença
 
-[MIT](https://choosealicense.com/licenses/mit/) — use com responsabilidade, aprimore com liberdade.
+[MIT](https://choosealicense.com/licenses/mit/) — use com responsabilidade e aprimore com liberdade.
 EOF
-
-echo "[OK] README.md atualizado em ~/terminal-master/README.md"
