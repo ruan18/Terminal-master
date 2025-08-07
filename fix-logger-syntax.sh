@@ -1,5 +1,13 @@
 #!/bin/bash
 
+LOGGER="$HOME/terminal-master/modules/logger/logger.sh"
+
+echo "[FIX] Corrigindo sintaxe do logger.sh"
+
+# Refaz o logger.sh com a versão segura e testada
+cat > "$LOGGER" << 'EOF'
+#!/bin/bash
+
 source ~/.env/vars.sh
 
 log_info() {
@@ -37,3 +45,7 @@ decrypt_log() {
         echo "[ERROR] Falha na descriptografia do log"
     fi
 }
+EOF
+
+chmod +x "$LOGGER"
+echo "[OK] logger.sh corrigido e pronto!"
