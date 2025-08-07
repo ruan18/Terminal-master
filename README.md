@@ -1,3 +1,5 @@
+⚠️ *Aviso legal:* Este projeto está protegido por licença com restrição de uso comercial.Uso comercial, distribuição ou modificação para fins comerciais só com autorização prévia.
+
 cat > ~/terminal-master/README.md << 'EOF'
 # 🧠 terminal-master
 
