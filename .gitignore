@@ -4,3 +4,4 @@ logs/
 *.log
 *.bak
 *.tmp
+logs/
