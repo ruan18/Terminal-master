@@ -1,128 +1,182 @@
-Terminal Master
+cat > ~/terminal-master/README.md << 'EOF'
+# 🧠 terminal-master
 
-🎯 Suíte de Automação Terminal Profissional
+Suíte profissional de automação Linux via terminal com módulos integrados, logs criptografados, backup seguro, monitoramento do sistema e estrutura modular extensível.  
+Feito para sysadmins, devs, pentesters e entusiastas que querem poder absoluto sobre o sistema.
 
-Projeto modular e poderoso para automações em terminal Linux com logs criptografados, alertas e integração entre scripts.
+---
 
-🔧 Instalação
+## 🚀 Instalação
 
-# Clone o repositório
-git clone https://github.com/seu-usuario/terminal-master.git
+\`\`\`bash
+# Clone o projeto
+git clone https://github.com/ruan18/terminal-master.git
 cd terminal-master
 
-# Torne o instalador executável e execute
+# Torne o instalador executável e rode
 chmod +x install.sh
 bash install.sh
-
-✅ Após a instalação, ative as variáveis:
-
-
-
-
-source ~/.env/vars.sh
-
+\`\`\`
 
 ---
 
-🚀 Funcionalidades Implementadas
+## 🧩 Execução via Terminal
 
-✅ Logger (com criptografia)
+\`\`\`bash
+# Ver ajuda
+bash terminal-master.sh --help
 
-Gera logs com níveis: INFO, ERROR, DEBUG
-
-Organiza por pasta/data
-
-Criptografa e descriptografa automaticamente com OpenSSL
-
-
-# Exemplo:
-bash logger.sh --info "Sistema iniciado com sucesso"
-bash logger.sh --error "Erro de autenticação"
-bash logger.sh --encrypt
-bash logger.sh --decrypt
-
-
----
-
-✅ Monitoramento do Sistema
-
-Mostra uso de CPU, RAM e disco
-
-Salva tudo em log criptografado automaticamente
-
-
-# Executar via script principal
+# Executar monitoramento do sistema
 bash terminal-master.sh --monitor
 
-# Ou diretamente
-bash modules/monitor/monitor.sh
-
+# Executar backup criptografado
+bash terminal-master.sh --backup
+\`\`\`
 
 ---
 
-📦 Estrutura de Pastas
+## 🧠 Estrutura de Pastas
 
+\`\`\`bash
 terminal-master/
-├── terminal-master.sh          # Script principal
-├── install.sh                  # Instalador automático
-├── save.sh                     # Script para salvar via Git
-├── .env/vars.sh                # Variáveis do projeto (criptografia, logs)
-├── logs/                       # Logs organizados por módulo/data
+├── install.sh
+├── terminal-master.sh
+├── .env/
+│   └── vars.sh
+├── logs/
 │   └── monitor/
-│       └── monitor.log.enc
-├── modules/                    # Módulos separados
-│   ├── logger/                 # Logger principal
-│   └── monitor/                # Monitor do sistema
-└── README.md                   # Este arquivo
-
-
----
-
-🔐 Segurança
-
-Logs protegidos com OpenSSL AES-256-CBC
-
-Chave criptográfica configurável em .env/vars.sh
-
-
+├── backups/
+├── modules/
+│   ├── logger/
+│   │   └── logger.sh
+│   ├── monitor/
+│   │   └── monitor.sh
+│   └── backup/
+│       └── backup.sh
+\`\`\`
 
 ---
 
-📤 Salvamento com Git
+## 🔐 Módulo Logger (com Criptografia)
 
-Para salvar seu progresso e subir ao GitHub:
+Registra eventos em diferentes níveis com criptografia AES-256 nos logs.
 
-bash save.sh
+\`\`\`bash
+# Logar manualmente (caso deseje)
+bash modules/logger/logger.sh --info "Sistema iniciado"
+bash modules/logger/logger.sh --error "Erro crítico"
+bash modules/logger/logger.sh --debug "Modo debug ativado"
 
+# Criptografar logs antigos
+bash modules/logger/logger.sh --encrypt
 
----
+# Descriptografar para leitura
+bash modules/logger/logger.sh --decrypt
+\`\`\`
 
-✨ Em breve
-
-Módulo de Backup automático com log e alerta Telegram
-
-Watchdog de serviços
-
-Atualizador inteligente de pacotes
-
-Documentação técnica com Makefile
-
-
+📁 Logs criptografados são salvos automaticamente em \`logs/YYYY-MM-DD/terminal.log.enc\`
 
 ---
 
-🤖 Modo Hacker
+## 📊 Módulo Monitor
 
-Comandos úteis:
+Coleta dados básicos do sistema (RAM, CPU, espaço em disco, temperatura, uptime etc.)
 
-source ~/.env/vars.sh      # Carrega variáveis do projeto
-bash terminal-master.sh    # Executa o sistema
+\`\`\`bash
+bash terminal-master.sh --monitor
+\`\`\`
 
+📁 Gera log criptografado em \`logs/monitor/monitor.log.enc\`
 
 ---
 
-🧠 Autor
+## 💾 Módulo Backup
 
-Feito por @ruan100pressa com o 🔥 nas veias e o terminal na cabeça.
+Cria backup compactado e criptografado do diretório desejado.
 
-Se curtiu, ⭐ dá uma estrela no repositório!
+\`\`\`bash
+bash terminal-master.sh --backup
+\`\`\`
+
+📦 Gera:
+- \`backup_TIMESTAMP.tar.gz\`
+- \`backup_TIMESTAMP.tar.gz.enc\`
+
+📁 Salvos em: \`~/terminal-master/backups\`
+
+---
+
+## ⚙️ Variáveis de Ambiente
+
+Essas variáveis ficam em \`.env/vars.sh\` e são carregadas automaticamente. Exemplo:
+
+\`\`\`bash
+export LOG_ENCRYPTION_KEY="sua-chave-forte-aqui"
+export PROJECT_ROOT="\$HOME/terminal-master"
+export LOGGER_MODULE="\$PROJECT_ROOT/modules/logger/logger.sh"
+export BACKUP_SOURCE="\$HOME/Documentos"
+export BACKUP_DIR="\$PROJECT_ROOT/backups"
+\`\`\`
+
+Carregar:
+
+\`\`\`bash
+source ~/.env/vars.sh
+\`\`\`
+
+---
+
+## 🧪 Módulos Prontos
+
+| Flag             | Descrição                         | Status |
+|------------------|-----------------------------------|--------|
+| \`--monitor\`       | Coleta dados do sistema + log     | ✅ OK  |
+| \`--backup\`        | Backup com compressão + criptografia | ✅ OK  |
+| \`--logger\`        | Logger modular com AES-256        | ✅ OK  |
+
+---
+
+## 🔮 Próximos Módulos (em construção)
+
+| Flag             | Descrição                              |
+|------------------|------------------------------------------|
+| \`--health\`       | Verificação de integridade do sistema    |
+| \`--watchdog\`     | Detecção ativa de falhas                |
+| \`--cron\`         | Execução programada automática (cron)   |
+| \`--telegram\`     | Envio de alertas via bot Telegram       |
+| \`--update\`       | Atualizações automáticas do projeto     |
+| \`--logrotate\`    | Limpeza e rotação dos logs antigos      |
+
+---
+
+## 🤝 Contribuindo
+
+1. Faça um fork  
+2. Crie um branch com sua feature: \`git checkout -b minha-feature\`  
+3. Faça commit: \`git commit -m 'feat: minha nova feature'\`  
+4. Push: \`git push origin minha-feature\`  
+5. Crie um Pull Request
+
+---
+
+## 🔒 Segurança
+
+- Criptografia AES-256 via OpenSSL  
+- Sem coleta de dados  
+- Backup e logs locais, protegidos por chave definida pelo usuário  
+- Ideal para automações pessoais ou profissionais
+
+---
+
+## 🧑‍💻 Autor
+
+Feito com ⚡ foco técnico e ☕ café por [ruan18](https://github.com/ruan18)
+
+---
+
+## 🌐 Licença
+
+[MIT](https://choosealicense.com/licenses/mit/) — use com responsabilidade, aprimore com liberdade.
+EOF
+
+echo "[OK] README.md atualizado em ~/terminal-master/README.md"
